@@ -1,0 +1,70 @@
+body {
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-default {
+    background-color: #55ACEE;
+    border-color: #55ACEE;
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand img {
+    display: inline;
+    margin-right: 10px;
+}
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:hover {
+    border-color: #ffffff;
+}
+
+#api_rosetta_code_filters {
+    background-color: #292F33;
+    border: 0px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#api_rosetta_code_filters .col-md-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#api_rosetta_code_filters .col-md-4 .code-filter img {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#api_rosetta_code_filters .col-md-4 .code-filter p {
+    font-size: 20pt;
+}
+#api_rosetta_code_filters .col-md-4 .code-filter .filter-select {
+    width: 180px;
+    font-size: 15px;
+    text-align: left;
+}
+.chosen-container {
+    font-size: 15px;
+    text-align: left;
+}
+
