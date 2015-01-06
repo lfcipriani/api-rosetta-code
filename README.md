@@ -36,3 +36,11 @@ This is a working in progress, your contribution is more than welcomed.
 * Keep use cases simple and short, one request only, single file (if possible)
 * Don't abuse on code comments, but write a legible code
 * Reuse the template folder to create new use cases or samples
+
+## Next dojos
+
+*  `01/05/2015 ` [Node.js dojo][0] by [@NodeBR][1] and [@TwitterDevBR][2].
+
+[0]: http://www.meetup.com/NodeBR-Sao-Paulo/events/219499217
+[1]: https://twitter.com/nodebr
+[2]: https://twitter.com/twitterdevbr
