@@ -20,10 +20,10 @@ for uc in use_cases:
 
     if (os.path.isdir(path) and "_template_" not in path):
         print "Use case: " + path
-        readme      = open(path + "/README.md",'r')
+        usecase_readme_path = (path + "/README.md")
+        readme      = open(usecase_readme_path,'r')
         readme_text = readme.read()
         use_case    = readme_text.split('\n', 1)[0].replace("#","").strip()
-        readme_text = cgi.escape(readme_text)
         readme.close()
 
         samples = os.listdir(path)
@@ -32,10 +32,7 @@ for uc in use_cases:
 
             if (os.path.isdir(sample_path)):
                 print "    Sample: " + sample_path
-                sample_readme = open(sample_path + "/README.md",'r')
-                sample_readme_text = sample_readme.read()
-                sample_readme_text = cgi.escape(sample_readme_text)
-                sample_readme.close()
+                sample_readme_path = (sample_path + "/README.md")
                 i = s.find("-")
                 if i != -1:
                     language = s[0:i]
@@ -45,7 +42,7 @@ for uc in use_cases:
                     library = ""
 
                 key = hashlib.md5(uc + s).hexdigest()
-                samples_list[key] = { "usecase_readme": readme_text, "usecase_name": use_case, "readme": sample_readme_text, "language": language, "library": library, "path": sample_path[1:] }
+                samples_list[key] = { "usecase_readme_path": usecase_readme_path[1:], "usecase_name": use_case, "readme": sample_readme_path[1:], "language": language, "library": library, "path": sample_path[1:] }
                 if use_case not in index["usecase"]:
                     index["usecase"][use_case] = []
                 if language not in index["language"]:
@@ -64,7 +61,7 @@ for uc in use_cases:
 print "Dumping json..."
 
 json_text = json.dumps({ "samples": samples_list, "index": index })
-file = open("index.json", "w")
+file = open("./site/index.json", "w")
 file.write(json_text)
 file.close()
 
