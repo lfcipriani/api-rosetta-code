@@ -20,3 +20,8 @@ Run the script
 
 * Add library URL, optional
 * ...
+
+## Contributors
+
+* Add the names, links
+* ...
