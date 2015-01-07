@@ -1,0 +1,13 @@
+{
+	"require": {
+	    "php": ">=5.4.0",
+	    "abraham/twitteroauth": "dev-master",
+	    "themattharris/tmhoauth": "dev-master"
+	},
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t ./ index.php"
+        ]
+    }
+}
