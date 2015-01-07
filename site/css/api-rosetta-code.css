@@ -68,3 +68,53 @@ body {
     text-align: left;
 }
 
+img.inline {
+    display: inline;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#filter-result {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#filter-result ul {
+   list-style-image: url('../img/code_small.png');
+   margin-left: 40px;
+}
+#filter-result li {
+    font-size: 20px;
+}
+#filter-result .code-options {
+    display: inline;
+    width: 70px;
+    text-align: center;
+    margin-left: 5px;
+}
+#filter-result .code-options img {
+    display: inline;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+#filter-result .readme-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    display: none;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+#filter-result .readme-container ul {
+    list-style-type: disc;
+    list-style-image: none;
+    margin-left: 10px;
+}
+#filter-result .readme-container li {
+    font-size: 13px;
+}
+#filter-result .readme-container h1 {
+    font-size: 18px;
+}
+#filter-result .readme-container h2 {
+    font-size: 16px;
+}

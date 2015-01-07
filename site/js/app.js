@@ -7,14 +7,35 @@ $(document).ready(function() {
         }
     });
     $(".filter-select").chosen({allow_single_deselect: true}).change(function() {
-        console.log(ApiRosettaCode.runFilter());
+        ApiRosettaCode.renderResult($(""), ApiRosettaCode.runFilter());
     });
 
-    console.log(ApiRosettaCode.runFilter());
+    ApiRosettaCode.renderResult(ApiRosettaCode.runFilter());
+
+
+    $(".load-readme").click(function(event) {
+        event.preventDefault();
+        var readmeContainer = $(this).parent().next();
+        if (readmeContainer.is(':visible')) {
+            readmeContainer.hide();
+        } else {
+            if (readmeContainer.html().length == 0) {
+                var href = $(this).attr("href");
+                $.get(href, function(data) {
+                    readmeContainer.html(marked(data));
+                    readmeContainer.show();
+                });
+            } else {
+                readmeContainer.show();            
+            }
+        }
+    });
+
 });
 
 var ApiRosettaCode = {
     filters: ["usecase", "language", "library"],
+    repositoryBaseUrl: "https://github.com/twitterdev/api-rosetta-code/tree/master",
 
     runFilter: function() {
         var values = [];
@@ -53,5 +74,10 @@ var ApiRosettaCode = {
         }
 
         return result;
+    },
+
+    renderResult: function(container, result) {
+    
     }
+
 };
