@@ -61,8 +61,9 @@ for uc in use_cases:
 print "Dumping json..."
 
 json_text = json.dumps({ "samples": samples_list, "index": index })
-file = open("./site/index.json", "w")
-file.write(json_text)
+javascript = "indexApiRosettaCode = " + json_text + ";"
+file = open("./site/js/samples_index.js", "w")
+file.write(javascript)
 file.close()
 
 print "Done!"
