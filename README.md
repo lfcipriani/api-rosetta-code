@@ -1,9 +1,10 @@
 API Rosetta Code
 ================
 
-A collection of standalone samples of Twitter API resources implemented in several combinations of languages and libraries that abstract Twitter API access.
+Inspired by [Rosetta Code][8], this repository is a  collection of standalone samples of Twitter API resources implemented in several combinations of languages and libraries that abstract Twitter API access.
 
 See http://twitterdev.github.io/api-rosetta-code/
+
 
 The samples are organized as follows:
 
@@ -16,7 +17,7 @@ The samples are organized as follows:
       \- use case 2
          \- ..
 
-The script `build_index.py` relies on that directory structure to generatea the javascript code that powers the website and dynamic filtering found at the [website][4].
+The script `build_index.py` relies on that directory structure to generate the javascript code that powers the website and dynamic filtering found at the [website][4].
 
 ## How to run a sample
 
@@ -48,6 +49,8 @@ The script `build_index.py` relies on that directory structure to generatea the 
 * Keep use cases simple and short, one request only, single file (if possible)
 * Don't abuse on code comments, but write a legible code
 
+**Big thanks to our [contributors][9]!**
+
 ## Events
 
 These were events organized to learn Twitter APIs with a specific language or platform.
@@ -63,3 +66,5 @@ These were events organized to learn Twitter APIs with a specific language or pl
 [5]: http://www.meetup.com/php-sp/events/219478835/
 [6]: http://www.meetup.com/GDG-SP/events/219479086/
 [7]: https://twitter.com/phpsp
+[8]: http://rosettacode.org/wiki/Rosetta_Code
+[9]: https://github.com/twitterdev/api-rosetta-code/graphs/contributors 
