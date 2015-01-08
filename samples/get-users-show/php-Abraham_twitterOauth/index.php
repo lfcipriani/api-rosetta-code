@@ -49,4 +49,4 @@ $userInfo = $connection->get(
     ['screen_name'=> 'phpsp']
 );
 
-var_dump($userInfo);
+echo($userInfo);
