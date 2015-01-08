@@ -34,7 +34,9 @@ The script `build_index.py` relies on that directory structure to generatea the 
 * Use the template directory found at `/samples/_template_` to create a new use case or sample
 * Respect the directory organization and naming structure
 * Implement code
-* Document and test it
+* Document and test it, don't forget to add your info in the sample contributors section
+* Run `build_script.py` to recreate the index for the website
+* Send the pull request
 
 ### Important guidelines
 
