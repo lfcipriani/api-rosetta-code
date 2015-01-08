@@ -1,10 +1,9 @@
 API Rosetta Code
 ================
 
-Inspired by [Rosetta Code][8], this repository is a  collection of standalone samples of Twitter API resources implemented in several combinations of languages and libraries that abstract Twitter API access.
+Inspired by [Rosetta Code][8], this repository is a community-powered collection of standalone samples of Twitter API resources implemented in several combinations of languages and libraries that abstract Twitter API access.
 
 See http://twitterdev.github.io/api-rosetta-code/
-
 
 The samples are organized as follows:
 
