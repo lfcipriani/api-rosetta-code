@@ -16,8 +16,6 @@ Run the script in command line
 To see a real-live page in action, start the PHP built-in web server with
 command:
 
-.. code-block:: console
-
     $ composer run
 
 Then, browse to http://localhost:8888/.
