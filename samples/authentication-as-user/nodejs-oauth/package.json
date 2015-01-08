@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-oauth",
+  "version": "1.0.0",
+  "description": "Node.js demo for accessing Twitter's API as user",
+  "main": "execute.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Hoffmeister <alanhoffmeister@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "oauth": "^0.9.12"
+  }
+}

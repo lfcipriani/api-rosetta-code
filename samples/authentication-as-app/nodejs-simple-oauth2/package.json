@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-simple-oauth2",
+  "version": "1.0.0",
+  "description": "Node.js demo for accessing Twitter's API as app",
+  "main": "execute.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Hoffmeister <alanhoffmeister@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "simple-oauth2": "^0.2.1"
+  }
+}
