@@ -42,7 +42,7 @@ for uc in use_cases:
                     library = ""
 
                 key = hashlib.md5(uc + s).hexdigest()
-                samples_list[key] = { "usecase_readme_path": usecase_readme_path[1:], "usecase_name": use_case, "readme": sample_readme_path[1:], "language": language, "library": library, "path": sample_path[1:] }
+                samples_list[key] = { "usecase_path": path[2:], "usecase_readme_path": usecase_readme_path[2:], "usecase_name": use_case, "readme": sample_readme_path[2:], "language": language, "library": library, "path": sample_path[2:] }
                 if use_case not in index["usecase"]:
                     index["usecase"][use_case] = []
                 if language not in index["language"]:
