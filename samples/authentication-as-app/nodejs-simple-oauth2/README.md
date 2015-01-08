@@ -16,3 +16,7 @@ Run the script
 ## References
 
 * https://github.com/andreareginato/simple-oauth2
+
+## Contributors
+
+* Alan Hoffmeister https://twitter.com/alan_hoff

@@ -16,3 +16,7 @@ Run the script
 ## References
 
 * https://github.com/ciaranj/node-oauth
+
+## Contributors
+
+* Alan Hoffmeister https://twitter.com/alan_hoff

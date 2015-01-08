@@ -16,3 +16,7 @@ Run the script
 ## References
 
 * https://github.com/ttezel/twit
+
+## Contributors
+
+* Alan Hoffmeister https://twitter.com/alan_hoff
