@@ -96,7 +96,7 @@ var ApiRosettaCode = {
             container.html(html);
             ApiRosettaCode.bindReadmeExpand();
         } else {
-            container.html("<h3>There's no sample with that combination. Contribute!</h3>");
+            container.html('<h3>There\'s no sample with that combination of filters.</h3><h4>Would be great if you could <a href="contribute.html">contribute</a> with one.</h4>');
         }
     },
 

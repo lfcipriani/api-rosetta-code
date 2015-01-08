@@ -31,66 +31,58 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Contribute</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="https://github.com/twitterdev/api-rosetta-code" target="_blank" title="See it on Github">Github</a></li>
+            <li><a href="https://github.com/twitterdev/api-rosetta-code#contributing" target="_blank">Contribute</a></li>
+            <li><a href="https://github.com/twitterdev/api-rosetta-code#api-rosetta-code" target="_blank">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <div id="api_rosetta_code_filters">
+        <div class="container">
 
-        <div class="row" id="api_rosetta_code_filters">
-            <div class="col-sm-4 text-center">
-                <div class="code-filter">
-                    <p><img src="site/img/use_blue.png" alt=""/>use case</p>
-                    <select name="select" class="filter-select" id="usecase-filter" data-placeholder="filter by use case...">
-                        <option value=""></option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center">
-                <div class="code-filter">
-                    <p><img src="site/img/lang_blue.png" alt=""/>language</p>
-                    <select name="select" class="filter-select" id="language-filter" data-placeholder="filter by language...">
-                        <option value=""></option>
-                    </select>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center">
-                <div class="code-filter">
-                    <p><img src="site/img/lib_blue.png" alt=""/>library</p>
-                    <select name="select" class="filter-select" id="library-filter" data-placeholder="filter by library...">
-                        <option value=""></option>
-                    </select>
-                </div>
-            </div>
-        </div>
-
-        <div class="row" id="filter-result">
-            <h2><img src="site/img/use_black.png" class="inline" alt="Use case title">GET search/tweets</h2>
-            <ul>
-                <li><a href="#" class="apply-filter" title="Apply filter">ruby</a> using <a href="#" title="Apply filter">simple_oauth</a>
-                    <div class="code-options">
-                        <a href="samples/authentication-as-user/ruby-simple_oauth/README.md" class="load-readme" title="Expand README"><img src="site/img/docs_blue.png" alt="Documentation icon"/></a>
-                        <a href="https://github.com/twitterdev/api-rosetta-code/tree/master/samples/authentication-as-user/ruby-simple_oauth" target="_blank" title="See the code sample"><img src="site/img/github_blue.png" alt="Github icon"/></a>
-                        <a href="https://twitter.com/intent/tweet&" class="share-sample" title="Share this sample"><img src="site/img/share_blue.png" alt="Share icon"/></a>
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <div class="code-filter">
+                        <p><img src="site/img/use_blue.png" alt=""/>use case</p>
+                        <select name="select" class="filter-select" id="usecase-filter" data-placeholder="filter by use case...">
+                            <option value=""></option>
+                        </select>
                     </div>
-                    <div class="readme-container"></div>
-                </li>
-                <li><a href="#" class="apply-filter" title="Apply filter">ruby</a> using <a href="#" title="Apply filter">simple_oauth</a>
-                    <div class="code-options">
-                        <a href="samples/authentication-as-user/ruby-simple_oauth/README.md" class="load-readme" title="Expand README"><img src="site/img/docs_blue.png" alt="Documentation icon"/></a>
-                        <a href="#" target="_blank" title="See the code sample"><img src="site/img/github_blue.png" alt="Github icon"/></a>
-                        <a href="#" class="share-sample" title="Share this sample"><img src="site/img/share_blue.png" alt="Share icon"/></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="code-filter">
+                        <p><img src="site/img/lang_blue.png" alt=""/>language</p>
+                        <select name="select" class="filter-select" id="language-filter" data-placeholder="filter by language...">
+                            <option value=""></option>
+                        </select>
                     </div>
-                    <div class="readme-container"></div>
-                </li>
-            </ul>
-        </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="code-filter">
+                        <p><img src="site/img/lib_blue.png" alt=""/>library</p>
+                        <select name="select" class="filter-select" id="library-filter" data-placeholder="filter by library...">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </div>
+
+    <div class="container">
+        <div class="row" id="filter-result">
+            <h2>Loading...</h2>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Not able to find an example? <a href="http://www.twittercommunity.com">Ask us</a> or <a href="https://github.com/twitterdev/api-rosetta-code#contributing">contribute</a>!</p>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="site/chosen/chosen.jquery.min.js"></script>
