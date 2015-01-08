@@ -1,8 +1,7 @@
 {
 	"require": {
 	    "php": ">=5.4.0",
-	    "abraham/twitteroauth": "dev-master",
-	    "themattharris/tmhoauth": "dev-master"
+	    "abraham/twitteroauth": "dev-master"
 	},
     "scripts": {
         "run": [

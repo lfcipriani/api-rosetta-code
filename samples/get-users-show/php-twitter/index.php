@@ -4,9 +4,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 function getCredentials()
 {
     $fileContent = file_get_contents('../../../credentials.txt'); //read the file
@@ -18,11 +15,15 @@ function getCredentials()
 function setCredentialsConstants()
 {
     $credentials = getCredentials();
-    //set the credentials values in constants
-    define('CONSUMER_KEY', $credentials[0]);
-    define('CONSUMER_SECRET', $credentials[1]);
-    define('ACCESS_TOKEN', $credentials[2]);
-    define('TOKEN_SECRET', $credentials[3]);
+
+    try {
+        define('CONSUMER_KEY', $credentials[0]);
+        define('CONSUMER_SECRET', $credentials[1]);
+        define('ACCESS_TOKEN', $credentials[2]);
+        define('TOKEN_SECRET', $credentials[3]);
+    } catch (Exception $e) {
+        throw $e;
+    }
 
     return true;
 }
@@ -39,15 +40,13 @@ function getConnectionWithAccessToken()
     return $connection;
 }
 
-//set the credentials constants to start the script
 setCredentialsConstants();
 
-//get the twitter connection/twitterOAuth object
 $connection = getConnectionWithAccessToken();
 
-$userinfo = $connection->get(
+$userInfo = $connection->get(
     'users/show',
     ['screen_name'=> 'phpsp']
 );
 
-var_dump($userinfo);
+var_dump($userInfo);
