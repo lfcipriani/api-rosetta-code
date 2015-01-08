@@ -46,19 +46,19 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#api_rosetta_code_filters .col-md-4 {
+#api_rosetta_code_filters .col-sm-4 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#api_rosetta_code_filters .col-md-4 .code-filter img {
+#api_rosetta_code_filters .col-sm-4 .code-filter img {
     display: inline;
     margin-right: 10px;
     vertical-align: middle;
 }
-#api_rosetta_code_filters .col-md-4 .code-filter p {
+#api_rosetta_code_filters .col-sm-4 .code-filter p {
     font-size: 20pt;
 }
-#api_rosetta_code_filters .col-md-4 .code-filter .filter-select {
+#api_rosetta_code_filters .col-sm-4 .code-filter .filter-select {
     width: 180px;
     font-size: 15px;
     text-align: left;
@@ -80,25 +80,26 @@ img.inline {
 }
 #filter-result ul {
    list-style-image: url('../img/code_small.png');
-   margin-left: 40px;
+   margin-left: 0;
 }
 #filter-result li {
     font-size: 20px;
 }
+
 #filter-result .code-options {
     display: inline;
     width: 70px;
     text-align: center;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 #filter-result .code-options img {
     display: inline;
-    margin-right: 3px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 #filter-result .readme-container {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 13px;
     display: none;
     border: 1px solid #000000;

@@ -78,15 +78,11 @@ var ApiRosettaCode = {
             for (usecase in result) {
                 if (usecase == "filter_result_count") { continue; }
 
-                html = html.concat('<h2><img src="site/img/use_black.png" class="inline" alt="Use case title">' + usecase);
-                html = html.concat('<div class="code-options">');
-                html = html.concat('<a href="'+ result[usecase][0]["usecase_readme_path"] +'" class="load-readme" title="Expand README"><img src="site/img/docs_blue.png" alt="Documentation icon"/></a>');
-                html = html.concat('<a href="'+ ApiRosettaCode.repositoryBaseUrl + result[usecase][0]["usecase_path"] +'" target="_blank" title="See it on Github"><img src="site/img/github_blue.png" alt="Github icon"/></a>');
-                html = html.concat('<a href="https://twitter.com/intent/tweet?' +
-                        'via=TwitterDev&url='+ encodeURIComponent(ApiRosettaCode.repositoryBaseUrl + result[usecase][0]["usecase_path"]) +
-                        '" class="share-sample" title="Share this"><img src="site/img/share_blue.png" alt="Share icon"/></a>');
-                html = html.concat('</div><div class="readme-container"></div>');
-                html = html.concat("</h2><ul>");
+                html = html.concat('<h2>');
+                html = html.concat('<a href="'+ result[usecase][0]["usecase_readme_path"] +'" class="load-readme" title="Expand README">'+ usecase +'</a>');
+                html = html.concat("</h2>");
+                html = html.concat('<div class="readme-container"></div>');
+                html = html.concat("<ul>");
 
                 for (var i = 0; i < result[usecase].length; i++) {
                     html = html.concat('<li>');
@@ -130,9 +126,6 @@ var ApiRosettaCode = {
         html = html.concat('<div class="code-options">');
         html = html.concat('<a href="'+ sample["readme"] +'" class="load-readme" title="Expand README"><img src="site/img/docs_blue.png" alt="Documentation icon"/></a>');
         html = html.concat('<a href="'+ ApiRosettaCode.repositoryBaseUrl + sample["path"] +'" target="_blank" title="See it on Github"><img src="site/img/github_blue.png" alt="Github icon"/></a>');
-        html = html.concat('<a href="https://twitter.com/intent/tweet?' +
-                'via=TwitterDev&url='+ encodeURIComponent(ApiRosettaCode.repositoryBaseUrl + sample["path"]) +
-                '" class="share-sample" title="Share this"><img src="site/img/share_blue.png" alt="Share icon"/></a>');
         html = html.concat('</div><div class="readme-container"></div>');
 
         return html;
