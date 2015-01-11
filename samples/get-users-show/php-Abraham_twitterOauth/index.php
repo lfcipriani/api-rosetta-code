@@ -49,4 +49,6 @@ $userInfo = $connection->get(
     ['screen_name'=> 'phpsp']
 );
 
-echo($userInfo);
+$userInfoJson = json_encode((array) $userInfo);
+
+echo($userInfoJson);
