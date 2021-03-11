@@ -3,8 +3,6 @@ API Rosetta Code
 
 Inspired by [Rosetta Code][8], this repository is a community-powered collection of standalone samples of Twitter API resources implemented in several combinations of languages and libraries that abstract Twitter API access.
 
-See http://twitterdev.github.io/api-rosetta-code/
-
 The samples are organized as follows:
 
     - samples
@@ -57,6 +55,8 @@ These were events organized to learn Twitter APIs with a specific language or pl
 *  `01/05/2015 ` [Node.js dojo][0] by [@NodeBR][1] and [@TwitterDevBR][2].
 *  `01/06/2015 ` [PHPSP dojo][5] by [@phpsp][7] and [@TwitterDevBR][2].
 *  `01/07/2015 ` [Fabric dojo][6] by Google Developer Group Sao Paulo and [@TwitterDevBR][2].
+
+*This repository is a mirror copy from twitterdev version, given that it was removed from their org.*
 
 [0]: http://www.meetup.com/NodeBR-Sao-Paulo/events/219499217
 [1]: https://twitter.com/nodebr
